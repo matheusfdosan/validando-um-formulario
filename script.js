@@ -47,6 +47,7 @@ function final_process(message, name, email) {
     "beforebegin",
     create_user(name.value, email.value)
   )
+  form.reset()
 }
 
 function message_reset(element) {
