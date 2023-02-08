@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sora: ["Sora", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
+
+    <title>Formulário</title>
+  </head>
+  <body class="bg-sky-200">
+    <form
+      action=""
+      method="post"
+      class="m-auto mt-12 bg-white w-1/2 p-5 rounded-md flex flex-col"
+    >
+      <h1 class="text-center text-3xl mb-5">Adicionar usuário:</h1>
+
+      <label for="name" class="mb-2 text-xl">Nome:</label>
+      <input
+        type="text"
+        id="text"
+        placeholder="Digite seu nome aqui"
+        tabindex="1"
+        spellcheck="true"
+        class="mb-6 p-2 outline-zinc-400 border border-zinc-400 rounded"
+      />
+      <label for="email" class="mb-2 text-xl">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Digite seu email aqui"
+        tabindex="1"
+        spellcheck="true"
+        class="mb-6 p-2 outline-zinc-400 border border-zinc-400 rounded"
+      />
+
+      <span class="message block rounded-md p-2.5"
+        >Digite todos os seus dados de usuário.</span
+      >
+
+      <input
+        type="submit"
+        value="Enviar"
+        class="mt-6 p-2 bg-stone-200 cursor-pointer border border-zinc-400 hover:bg-stone-300"
+      />
+    </form>
+
+    <div class="all-users bg-white rounded-md p-5 w-1/2 m-auto mt-5 text-xl">
+      <h1>Todos os usuários:</h1>
+      <ul class="users-list list-none">
+        
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
