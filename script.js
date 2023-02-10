@@ -1,4 +1,4 @@
-const form = document.querySelector("form")
+const $form = document.querySelector("form")
 
 const $message_element = document.querySelector(".message")
 
@@ -8,7 +8,7 @@ const success_message = "Usuário adicionado com sucesso!"
 
 const $users_list = document.querySelector(".users-list")
 
-form.addEventListener("submit", (event) => {
+$form.addEventListener("submit", (event) => {
   event.preventDefault()
 
   const $name_element = event.target[0]
